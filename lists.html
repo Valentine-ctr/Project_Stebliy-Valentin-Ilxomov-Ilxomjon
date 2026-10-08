@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lists | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html" class="active" aria-current="page">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Lists</span></h1>
+    <p class="lead">Organise items in order or without order.</p>
+    <article class="tag-card">
+      <h2>&lt;ul / li&gt;</h2>
+      <h3>Definition</h3>
+      <p>ul = unordered list (bullets). li = one list item.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>CSS class for styling</td></tr>
+        <tr><td>id</td><td>Unique identifier</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;ol&gt;</h2>
+      <h3>Definition</h3>
+      <p>Ordered list (numbers). Use when the order matters.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>type</td><td>Numbering style: 1, A, a, I, i</td></tr>
+        <tr><td>start</td><td>First number of the list</td></tr>
+        <tr><td>reversed</td><td>Counts backwards</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;Write code&lt;/li&gt;
+  &lt;li&gt;Test it&lt;/li&gt;
+  &lt;li&gt;Publish&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<ol type="A" start="3">
+  <li>Write code</li>
+  <li>Test it</li>
+  <li>Publish</li>
+</ol>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;dl / dt / dd&gt;</h2>
+      <h3>Definition</h3>
+      <p>Description list: dt = term, dd = its description.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Only global attributes</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Structure of the page&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Style of the page&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<dl>
+  <dt>HTML</dt>
+  <dd>Structure of the page</dd>
+  <dt>CSS</dt>
+  <dd>Style of the page</dd>
+</dl>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

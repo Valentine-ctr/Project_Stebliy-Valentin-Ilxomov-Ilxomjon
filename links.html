@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Links & images | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html" class="active" aria-current="page">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Links & images</span></h1>
+    <p class="lead">Connect pages and show pictures.</p>
+    <article class="tag-card">
+      <h2>&lt;a&gt;</h2>
+      <h3>Definition</h3>
+      <p>Creates a hyperlink to another page, file or website.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>href</td><td>Destination address (URL or file)</td></tr>
+        <tr><td>target</td><td>_blank opens the link in a new tab</td></tr>
+        <tr><td>rel</td><td>Relation; use noopener with _blank</td></tr>
+        <tr><td>title</td><td>Tooltip on hover</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;a href="index.html"&gt;Go home&lt;/a&gt;
+&lt;a href="https://www.w3.org" target="_blank" rel="noopener"&gt;W3C&lt;/a&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<a href="index.html">Go home</a>
+<a href="https://www.w3.org" target="_blank" rel="noopener">W3C</a>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;img&gt;</h2>
+      <h3>Definition</h3>
+      <p>Displays an image. It is an empty tag.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>Path to the image file</td></tr>
+        <tr><td>alt</td><td>Text shown if the image fails; read by screen readers</td></tr>
+        <tr><td>width</td><td>Width in pixels</td></tr>
+        <tr><td>height</td><td>Height in pixels</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;img src="images/logo.svg" alt="HTML logo" width="100"&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<img src="images/logo.svg" alt="HTML logo" width="100">
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

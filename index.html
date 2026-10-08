@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="Stebliy Valentin and Baxronov Ilxomjon">
+  <title>Home & page structure | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Home & page structure</span></h1>
+    <p class="lead">The skeleton every HTML page needs.</p>
+    <section class="tag-card">
+      <h2>&lt;start here&gt;</h2>
+      <p>Pick a page to review its tags. Every tag has a definition, an attribute table and a live example.</p>
+      <ul class="cards">
+      <li><a href="text.html"><strong>Text</strong>Text formatting</a></li>
+      <li><a href="links.html"><strong>Links</strong>Links & images</a></li>
+      <li><a href="lists.html"><strong>Lists</strong>Lists</a></li>
+      <li><a href="tables.html"><strong>Tables</strong>Tables</a></li>
+      <li><a href="forms.html"><strong>Forms</strong>Forms</a></li>
+      <li><a href="media.html"><strong>Media</strong>Multimedia</a></li>
+      <li><a href="semantic.html"><strong>Semantic</strong>Semantic & layout</a></li>
+      <li><a href="metadata.html"><strong>Metadata</strong>Metadata</a></li>
+      </ul>
+    </section>
+    <article class="tag-card">
+      <h2>&lt;!DOCTYPE / html&gt;</h2>
+      <h3>Definition</h3>
+      <p>Tells the browser this is an HTML5 page; &lt;html&gt; is the root element that wraps everything.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>lang</td><td>Language of the page (helps screen readers and search engines)</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  ...
+&lt;/html&gt;</code></pre>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;head&gt;</h2>
+      <h3>Definition</h3>
+      <p>Holds information about the page (title, CSS, meta). Nothing inside it is shown on the page.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Uses only global attributes such as id and class</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My page&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;body&gt;</h2>
+      <h3>Definition</h3>
+      <p>Contains everything the visitor sees: text, images, links, tables.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>Gives a CSS class name to style the body</td></tr>
+        <tr><td>id</td><td>Unique identifier</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;body&gt;
+  &lt;p&gt;Everything visible lives in the body.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<p>Everything visible lives in the body.</p>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

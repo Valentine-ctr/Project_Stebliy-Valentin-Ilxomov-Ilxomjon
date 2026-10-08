@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text formatting | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html" class="active" aria-current="page">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Text formatting</span></h1>
+    <p class="lead">Headings, paragraphs and emphasis.</p>
+    <article class="tag-card">
+      <h2>&lt;h1 – h6&gt;</h2>
+      <h3>Definition</h3>
+      <p>Six levels of headings. h1 is the most important, h6 the least.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Unique name, lets a link jump to this heading</td></tr>
+        <tr><td>class</td><td>CSS class for styling</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;h1&gt;Main title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;
+&lt;h3&gt;Section&lt;/h3&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<h1>Main title</h1>
+<h2>Subtitle</h2>
+<h3>Section</h3>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;p&gt;</h2>
+      <h3>Definition</h3>
+      <p>A paragraph of text. The browser adds space before and after.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>CSS class for styling</td></tr>
+        <tr><td>title</td><td>Tooltip shown on hover</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;p title="Hello!"&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<p title="Hello!">This is a paragraph.</p>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;strong / em&gt;</h2>
+      <h3>Definition</h3>
+      <p>strong = important text (bold). em = emphasised text (italic).</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Only global attributes</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; and &lt;em&gt;emphasised&lt;/em&gt;.&lt;/p&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<p>This is <strong>very important</strong> and <em>emphasised</em>.</p>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;br / hr&gt;</h2>
+      <h3>Definition</h3>
+      <p>br breaks the line. hr draws a horizontal line between topics.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Empty tags: no closing tag needed</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>First line&lt;br&gt;Second line
+&lt;hr&gt;
+New topic</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+First line<br>Second line
+<hr>
+New topic
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;blockquote&gt;</h2>
+      <h3>Definition</h3>
+      <p>A long quotation from another source.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>cite</td><td>URL of the source of the quote</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;blockquote cite="https://developer.mozilla.org"&gt;
+  HTML is the language of the web.
+&lt;/blockquote&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<blockquote cite="https://developer.mozilla.org">
+  HTML is the language of the web.
+</blockquote>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

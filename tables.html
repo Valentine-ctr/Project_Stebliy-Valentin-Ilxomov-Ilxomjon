@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tables | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html" class="active" aria-current="page">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Tables</span></h1>
+    <p class="lead">Show data in rows and columns.</p>
+    <article class="tag-card">
+      <h2>&lt;table / tr / th / td&gt;</h2>
+      <h3>Definition</h3>
+      <p>table = the grid, tr = row, th = header cell (bold), td = data cell.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>border</td><td>Border width (better to use CSS)</td></tr>
+        <tr><td>colspan</td><td>Cell stretches over several columns</td></tr>
+        <tr><td>rowspan</td><td>Cell stretches over several rows</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th&gt;Tag&lt;/th&gt;&lt;th&gt;Role&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;p&lt;/td&gt;&lt;td&gt;Paragraph&lt;/td&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;a&lt;/td&gt;&lt;td&gt;Link&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<table>
+  <tr><th>Tag</th><th>Role</th></tr>
+  <tr><td>p</td><td>Paragraph</td></tr>
+  <tr><td>a</td><td>Link</td></tr>
+</table>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;caption / thead / tbody&gt;</h2>
+      <h3>Definition</h3>
+      <p>caption = table title. thead and tbody separate the header from the body.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Only global attributes</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;table&gt;
+  &lt;caption&gt;Marks&lt;/caption&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Mark&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;&lt;tr&gt;&lt;td&gt;Sara&lt;/td&gt;&lt;td&gt;18&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<table>
+  <caption>Marks</caption>
+  <thead><tr><th>Name</th><th>Mark</th></tr></thead>
+  <tbody><tr><td>Sara</td><td>18</td></tr></tbody>
+</table>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;colspan&gt;</h2>
+      <h3>Definition</h3>
+      <p>Merges cells horizontally.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>colspan</td><td>Number of columns the cell covers</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;table&gt;
+  &lt;tr&gt;&lt;th colspan="2"&gt;Team&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Ali&lt;/td&gt;&lt;td&gt;Sara&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<table>
+  <tr><th colspan="2">Team</th></tr>
+  <tr><td>Ali</td><td>Sara</td></tr>
+</table>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semantic & layout | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html" class="active" aria-current="page">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Semantic & layout</span></h1>
+    <p class="lead">Tags whose names describe their role.</p>
+    <article class="tag-card">
+      <h2>&lt;header / nav / footer&gt;</h2>
+      <h3>Definition</h3>
+      <p>header = top of page, nav = menu links, footer = bottom of page.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>CSS class for styling</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;header&gt;My site&lt;/header&gt;
+&lt;nav&gt;&lt;a href="#"&gt;Home&lt;/a&gt; &lt;a href="#"&gt;About&lt;/a&gt;&lt;/nav&gt;
+&lt;footer&gt;(c) 2026&lt;/footer&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result invisible">Invisible in the page: open the browser tab or press Ctrl+U to see its effect.</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;main / section / article&gt;</h2>
+      <h3>Definition</h3>
+      <p>main = main content (once per page). section = a theme. article = a self-contained piece.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>id</td><td>Unique name for links</td></tr>
+        <tr><td>class</td><td>CSS class</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;main&gt;
+  &lt;section&gt;
+    &lt;article&gt;A blog post&lt;/article&gt;
+  &lt;/section&gt;
+&lt;/main&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<main>
+  <section>
+    <article>A blog post</article>
+  </section>
+</main>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;aside&gt;</h2>
+      <h3>Definition</h3>
+      <p>Side content related to the main content (ads, notes).</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>CSS class for styling</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;aside&gt;Did you know? HTML was created in 1991.&lt;/aside&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<aside>Did you know? HTML was created in 1991.</aside>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;div / span&gt;</h2>
+      <h3>Definition</h3>
+      <p>div = generic block box, span = generic inline piece. Used to group content for CSS.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>class</td><td>CSS class name</td></tr>
+        <tr><td>id</td><td>Unique identifier</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;div class="box"&gt;A block &lt;span&gt;and an inline part&lt;/span&gt;&lt;/div&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<div class="box">A block <span>and an inline part</span></div>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

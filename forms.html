@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forms | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html" class="active" aria-current="page">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Forms</span></h1>
+    <p class="lead">Collect information from visitors.</p>
+    <article class="tag-card">
+      <h2>&lt;form&gt;</h2>
+      <h3>Definition</h3>
+      <p>Container for form controls; sends the data somewhere.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>action</td><td>Address that receives the data</td></tr>
+        <tr><td>method</td><td>get or post</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;form action="#" method="post"&gt;
+  ...
+&lt;/form&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<form action="#" method="post">
+  ...
+</form>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;input + label&gt;</h2>
+      <h3>Definition</h3>
+      <p>input = a field the user fills. label = its caption, linked by for/id.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>type</td><td>text, email, password, checkbox, radio, number...</td></tr>
+        <tr><td>name</td><td>Name of the data sent</td></tr>
+        <tr><td>id</td><td>Links the input to its label</td></tr>
+        <tr><td>placeholder</td><td>Hint shown inside the empty field</td></tr>
+        <tr><td>required</td><td>Field cannot be empty</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;label for="mail"&gt;Email&lt;/label&gt;
+&lt;input type="email" id="mail" name="mail" placeholder="you@example.com" required&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<label for="mail">Email</label>
+<input type="email" id="mail" name="mail" placeholder="you@example.com" required>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;select / option&gt;</h2>
+      <h3>Definition</h3>
+      <p>Drop-down list; each option is one choice.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>name</td><td>Name of the data sent</td></tr>
+        <tr><td>value</td><td>Value sent for an option</td></tr>
+        <tr><td>selected</td><td>Option chosen by default</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;select name="lang"&gt;
+  &lt;option value="html" selected&gt;HTML&lt;/option&gt;
+  &lt;option value="css"&gt;CSS&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<select name="lang">
+  <option value="html" selected>HTML</option>
+  <option value="css">CSS</option>
+</select>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;textarea&gt;</h2>
+      <h3>Definition</h3>
+      <p>Multi-line text field.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>rows</td><td>Visible lines</td></tr>
+        <tr><td>cols</td><td>Visible width in characters</td></tr>
+        <tr><td>name</td><td>Name of the data sent</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;textarea name="msg" rows="3" cols="30"&gt;Write here...&lt;/textarea&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<textarea name="msg" rows="3" cols="30">Write here...</textarea>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;button&gt;</h2>
+      <h3>Definition</h3>
+      <p>A clickable button.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>type</td><td>submit sends the form, reset clears it, button does nothing</td></tr>
+        <tr><td>disabled</td><td>Button cannot be clicked</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;button type="reset"&gt;Clear&lt;/button&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<button type="submit">Send</button>
+<button type="reset">Clear</button>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

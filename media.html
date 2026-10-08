@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multimedia | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html" class="active" aria-current="page">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Multimedia</span></h1>
+    <p class="lead">Video, audio and embedded pages. Put your own files in the images/ folder.</p>
+    <article class="tag-card">
+      <h2>&lt;video&gt;</h2>
+      <h3>Definition</h3>
+      <p>Plays a video file inside the page.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>Path to the video</td></tr>
+        <tr><td>controls</td><td>Shows play/pause buttons</td></tr>
+        <tr><td>autoplay</td><td>Starts automatically (usually needs muted)</td></tr>
+        <tr><td>loop</td><td>Repeats</td></tr>
+        <tr><td>poster</td><td>Image shown before playing</td></tr>
+        <tr><td>width</td><td>Width in pixels</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;video src="Happy_cat.mp4" controls width="320"&gt;&lt;/video&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<video src="images/Happy_cat.mp4" controls width="320"></video>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;audio&gt;</h2>
+      <h3>Definition</h3>
+      <p>Plays a sound file.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>Path to the audio</td></tr>
+        <tr><td>controls</td><td>Shows the player</td></tr>
+        <tr><td>loop</td><td>Repeats</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;audio src="images/sample.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<audio src="images/yippee-meme-sound-effect.mp3" controls></audio>
+</div>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;iframe&gt;</h2>
+      <h3>Definition</h3>
+      <p>Embeds another web page inside this page.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>src</td><td>Address of the page to embed</td></tr>
+        <tr><td>title</td><td>Description for accessibility</td></tr>
+        <tr><td>width</td><td>Width in pixels</td></tr>
+        <tr><td>height</td><td>Height in pixels</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;iframe src="index.html" title="Home page" width="300" height="150"&gt;&lt;/iframe&gt;</code></pre>
+      <h3>Example (result)</h3>
+      <div class="result">
+<iframe src="index.html" title="Home page" width="300" height="150"></iframe>
+</div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

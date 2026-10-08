@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metadata | HTML Review</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html" class="active" aria-current="page">Metadata</a></li>
+    </ul>
+  </nav>
+  </header>
+  <main>
+    <h1 class="page-title"><span>Metadata</span></h1>
+    <p class="lead">Information about the page, placed in the head.</p>
+    <article class="tag-card">
+      <h2>&lt;meta&gt;</h2>
+      <h3>Definition</h3>
+      <p>Gives information about the page to browsers and search engines.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>charset</td><td>Character encoding, use UTF-8</td></tr>
+        <tr><td>name</td><td>Kind of info: description, viewport, author</td></tr>
+        <tr><td>content</td><td>Value of that info</td></tr>
+        <tr><td>http-equiv</td><td>Acts like an HTTP header, e.g. refresh</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;meta name="description" content="HTML review"&gt;</code></pre>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;title&gt;</h2>
+      <h3>Definition</h3>
+      <p>Text shown in the browser tab.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>(none)</td><td>Only global attributes</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;title&gt;HTML Review&lt;/title&gt;</code></pre>
+    </article>
+    <article class="tag-card">
+      <h2>&lt;link&gt;</h2>
+      <h3>Definition</h3>
+      <p>Connects the page to an external resource, mostly CSS.</p>
+      <h3>Attributes</h3>
+      <table class="attrs">
+        <tr><th>Attribute</th><th>Role</th></tr>
+        <tr><td>rel</td><td>Relation, e.g. stylesheet or icon</td></tr>
+        <tr><td>href</td><td>Path to the file</td></tr>
+        <tr><td>type</td><td>File type, e.g. text/css</td></tr>
+      </table>
+      <h3>Example (code)</h3>
+      <pre><code>&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>

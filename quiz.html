@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz | HTML Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="HTML review logo">
+      <div><h1>HTML Review</h1><p>The main tags, explained with live examples</p></div>
+    </div>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="text.html">Text</a></li>
+      <li><a href="links.html">Links</a></li>
+      <li><a href="lists.html">Lists</a></li>
+      <li><a href="tables.html">Tables</a></li>
+      <li><a href="forms.html">Forms</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="semantic.html">Semantic</a></li>
+      <li><a href="metadata.html">Metadata</a></li>
+      <li><a href="quiz.html" class="active" aria-current="page">Quiz</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title"><span>Quiz</span></h1>
+    <p class="lead">12 questions about the tags you reviewed. Click an answer to see right away if you are correct.</p>
+
+    <form class="quiz" action="#">
+
+      <!-- Question 1 -->
+      <fieldset>
+        <legend>1. Which tag creates a hyperlink?</legend>
+        <input type="radio" name="q1" id="q1a" class="no">
+        <label for="q1a">&lt;link&gt;</label>
+        <input type="radio" name="q1" id="q1b" class="ok">   <!-- correct answer: class="ok" -->
+        <label for="q1b">&lt;a&gt;</label>
+        <input type="radio" name="q1" id="q1c" class="no">
+        <label for="q1c">&lt;href&gt;</label>
+        <input type="radio" name="q1" id="q1d" class="no">
+        <label for="q1d">&lt;url&gt;</label>
+        <p class="fb good">Correct!</p>
+        <p class="fb bad">Not quite. The answer is: <code>&lt;a&gt;</code></p>
+      </fieldset>
+
+      <!-- Question 2 -->
+      <fieldset>
+        <legend>2. Which attribute gives the alternative text of an image?</legend>
+        <input type="radio" name="q2" id="q2a" class="no">
+        <label for="q2a">title</label>
+        <input type="radio" name="q2" id="q2b" class="no">
+        <label for="q2b">src</label>
+        <input type="radio" name="q2" id="q2c" class="ok">
+        <label for="q2c">alt</label>
+        <input type="radio" name="q2" id="q2d" class="no">
+        <label for="q2d">name</label>
+        <p class="fb good">Correct!</p>
+        <p class="fb bad">Not quite. The answer is: <code>alt</code></p>
+      </fieldset>
+
+      <!-- ... questions 3 to 12 follow the same pattern ... -->
+
+      <p class="score">Score: </p>
+      <button type="reset">Start again</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made by Name1 &amp; Name2 &middot; Lab Work 3 &middot; HTML &amp; CSS</p>
+  </footer>
+</body>
+</html>
